@@ -18,9 +18,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->datetime('res_date');
-            $table->Integer('user_id');
+            $table->datetime('res_date')->default(now());
             $table->Integer('guest_number');
+            $table->time('time');
+            $table->string('message');
             $table->timestamps();
         });
     }

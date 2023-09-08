@@ -121,69 +121,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-  z-index: 996;
-}
 
-#topbar.topbar-scrolled {
-  top: -40px;
-}
-
-#topbar .contact-info i {
-  font-style: normal;
-  color: #d9ba85;
-}
-
-#topbar .contact-info i span {
-  padding-left: 5px;
-  color: #fff;
-}
-
-#topbar .languages ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #cda45e;
-}
-
-#topbar .languages ul a {
-  color: white;
-}
-
-#topbar .languages ul li + li {
-  padding-left: 10px;
-}
-
-#topbar .languages ul li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: rgba(255, 255, 255, 0.5);
-  content: "/";
-}
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
-  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  background: rgba(12, 11, 9, 0.774);
+  border-bottom: 1px solid rgb(12, 11, 9);
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  top: 40px;
 }
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgb(0, 0, 0);
   border-bottom: 1px solid #37332a;
 }
 
@@ -202,8 +155,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#header .logo img {
-  max-height: 40px;
+#header .logo  {
+  max-height:120px;
+  margin-bottom:-10%;
 }
 
 /*--------------------------------------------------------------
@@ -443,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../../images/slider.jpg") top center;
+  background: url("../../images/slide.png")  center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -451,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.588);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -503,6 +457,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   line-height: 1;
   color: white;
+  background-color: #0c0b09;
   border: 2px solid #cda45e;
 }
 
@@ -743,7 +698,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  background: url("/images/aqaba-al-manara-a-luxury-collection-hotel-saraya-photo-20.jpeg") center center;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -751,7 +706,7 @@ section {
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.752);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -813,11 +768,14 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
+  position: relative;
+
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
+.about .content p {
+ color: white;
+ z-index: 1;
+ position: relative;
 }
 
 .about .content ul li {
@@ -831,7 +789,7 @@ section {
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+ font-size: x-large;
 }
 
 @media (min-width: 1024px) {

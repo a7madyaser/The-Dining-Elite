@@ -14,8 +14,10 @@ class ResturantController extends Controller
      */
     public function index()
     {
-        //
+        $resturants = Resturant::all();
+        return view('resturants', ['resturants' => $resturants]);
     }
+
 
     /**
      * Show the form for creating a new resource.

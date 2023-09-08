@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reservation;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\View\View;
 
 class ReservationController extends Controller
 {
@@ -12,9 +15,10 @@ class ReservationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index():View
     {
-        //
+        $reservations = Reservation::all();
+        return view ('home.show')->with('reservations',$reservations);
     }
 
     /**
@@ -23,8 +27,7 @@ class ReservationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    { return view('home.reservation.book');
     }
 
     /**
@@ -33,10 +36,23 @@ class ReservationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+
+        public function store(Request $request)
+        {
+            Reservation::create([
+                // "Database Colum"=>"Request Input",
+                "name" => $request->name,
+                "email" => $request->email,
+                "phone" => $request->phone,
+                "res_date"=>$request->date,
+               "guest_number"=>$request->people,
+               "time"=>$request->time,
+               "message"=>$request->message
+
+            ]);
+            return redirect('reservation')->with('flash_message', ' Addedd!');
+        }
+
 
     /**
      * Display the specified resource.

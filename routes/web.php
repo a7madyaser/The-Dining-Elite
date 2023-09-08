@@ -50,7 +50,8 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/logout', 'logout')->name('logout');
 });
 
+
 Route::resource("/reservation", ReservationController::class);
-// Route::resource("/category", CategoryController::class);
-Route::get('/categories', 'CategoryController@showCategories');
+
+
 

@@ -27,3 +27,6 @@ Route::get('/re', function () {
     return view('admin.reservation');
 });
 
+Route::get('/login', function () {
+    return view('login.login');
+});

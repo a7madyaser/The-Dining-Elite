@@ -2,10 +2,9 @@
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+        <div>
+            <img src="./img/dining-removebg-preview.png" alt="logo" style="width: 90%" >
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
     </a>
 
     <!-- Divider -->
@@ -13,7 +12,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -26,7 +25,7 @@
         Interface
     </div>
 
-    <!-- Nav Item - Pages Collapse Menu -->
+    {{-- <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
@@ -96,15 +95,43 @@
         <a class="nav-link" href="charts.html">
             <i class="fas fa-fw fa-chart-area"></i>
             <span>Charts</span></a>
+    </li> --}}
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="admin">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Admins</span></a>
     </li>
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="user">
             <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
+            <span>Users</span></a>
     </li>
 
+            <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="category">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Categories</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="reservation">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Restaurants</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="reservation">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Reservations</span></a>
+    </li>
+        
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

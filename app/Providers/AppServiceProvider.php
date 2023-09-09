@@ -3,6 +3,9 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
+use App\Models\Category;
+use App\Models\Resturant;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,8 +24,15 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
-        //
-    }
+
+
+public function boot()
+{
+    View::composer('home.navbar', function ($view) {
+        $resturants  = Resturant::all();
+        $view->with('resturants', $resturants );
+    });
+
+}
+
 }

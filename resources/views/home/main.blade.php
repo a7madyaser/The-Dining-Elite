@@ -13,11 +13,11 @@
       <div class="row">
         <div class="col-lg-8" style="margin-top:-12%">
           <h1>Welcome to <span>The Dinning Elite</span></h1>
-          <h2>Delivering great food for more than 18 years!</h2>
+          <h2> where booking has never been easier.</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+            <a href="/resturants" class="btn-book animated fadeInUp scrollto">Discover Now</a>
+            <a href="/book" class="btn-book animated fadeInUp scrollto">Book a Table</a>
           </div>
         </div>
 
@@ -40,7 +40,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>About Us</h3><br>
-            <p class="fst-italic">
+            <p class="fst">
 
                 Welcome to The Dinning Elite, your gateway to a world of culinary adventures and unforgettable dining experiences. We are passionate about connecting food enthusiasts like you with the finest restaurants in Aqba. At Dinning Elite, we believe that every meal should be a journey, and we're here to make that journey as seamless and enjoyable as possible.
             </p>
@@ -56,7 +56,7 @@
 
         <div class="section-title">
           <h2>Why Us</h2>
-          <p>Why Choose Our Restaurant</p>
+          <p>Why Choose The Dinning Elite</p>
         </div>
 
         <div class="row">
@@ -64,24 +64,25 @@
           <div class="col-lg-4">
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+              <h4>Restaurant Listings:</h4>
+              <p> Users can browse a variety of restaurants and cafes in their area based on location, type, or cuisine.
+            </p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="box" data-aos="zoom-in" data-aos-delay="200">
               <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+              <h4>Reservation Management:</h4>
+              <p> Restaurants can manage customer reservations, confirm or cancel bookings through an admin dashboard.</p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+              <h4>Table Reservation: </h4>
+              <p>Users can select the restaurant they want to dine at, book a table, specify the number of guests, and choose their preferred time.</p>
             </div>
           </div>
 
@@ -98,7 +99,7 @@
 
         <div class="section-title">
           <h2>Events</h2>
-          <p>Organize Your Events in our Restaurant</p>
+          <p>Organize Your Events in partener Restaurant</p>
         </div>
 
         <div class="events-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -107,7 +108,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
+                  <img src="/images/birth.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Birthday Parties</h3>
@@ -134,7 +135,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
+                  <img src="/images/aqaba.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Private Parties</h3>
@@ -161,16 +162,13 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
+                  <img src="/images/aqaba2.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
+                  <br><br>
                   <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    you won't have to wait for a table at your favorite restaurant. Book now and skip the wait!"
                   </p>
                   <ul>
                     <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>

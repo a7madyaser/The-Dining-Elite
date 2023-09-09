@@ -15,13 +15,19 @@ class CategoryController extends Controller
      *
      * @retStudenturn \Illuminate\Http\Response
      */
-    public function index()
-    {
+
+        public function index()
+        {
+            $categories = Category::all();
+            return view('home.navbar', compact('categories'));
+         
+
+        }
+
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-}}
+}

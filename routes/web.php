@@ -4,6 +4,9 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminRoutingController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\AdminResturantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +24,9 @@ Route::get('/main', function () {
 });
 
 //  Admin Panel /////
+Route::resource("/admin-layout", AdminController::class);
+Route::resource("/admin-layout", AdminUserController::class);
+Route::resource("/admin-layout", AdminResturantController::class);
 
 // Route::resource("/admin-layout", AdminRoutingController::class);
 

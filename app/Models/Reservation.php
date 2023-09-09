@@ -10,5 +10,5 @@ class Reservation extends Model
     use HasFactory;
     protected $table = 'reservations';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'email', 'phone','message','time','guest_number','res_date'];
+    protected $fillable = ['name', 'email', 'phone','message','restaurant','guest_number','res_date'];
 }

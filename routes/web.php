@@ -2,6 +2,7 @@
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Auth\LoginRegisterController;
+use App\Http\Controllers\ResturantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminRoutingController;
 use App\Http\Controllers\AdminController;
@@ -109,9 +110,6 @@ Route::get('/about', function () {
     return view('home.about');
 });
 
-Route::get('/book', function () {
-    return view('home.reservation.book');
-});
 
 Route::get('/login', function () {
     return view('home.login.login');
@@ -120,9 +118,13 @@ Route::get('/login', function () {
 Route::get('/show', function () {
     return view('home.show');
 });
+
+
 Route::get('/a', function () {
     return view('admin.About');
 });
+
+
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register', 'register')->name('register');
     Route::post('/store', 'store')->name('store');
@@ -134,6 +136,13 @@ Route::controller(LoginRegisterController::class)->group(function() {
 
 
 Route::resource("/reservation", ReservationController::class);
+Route::resource("/categories", CategoryController::class);
 
 
 
+Route::controller(ResturantController::class)->group(function() {
+Route::get('/book','showSecondPage')->name('showSecondPage');
+Route::get('/resturants','Page' )->name('Page');
+});
+
+Route::get("/resdetail/{id}",[ResturantController::class,'Pagedetail']);

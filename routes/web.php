@@ -19,9 +19,36 @@ Route::get('/main', function () {
     return view('home.main');
 });
 
-Route::get('/admin', function () {
-    return view('admin.dashboard');
+Route::get('/admin-layout', function () {
+    return view ('admin.layout');
 });
+
+Route::get('/admin-admin', function () {
+    return view ('admin.sidebar.admin');
+});
+
+Route::get('/admin-user', function () {
+    return view ('admin.sidebar.user');
+});
+
+Route::get('/admin-category', function () {
+    return view ('admin.sidebar.category');
+});
+
+Route::get('/admin-reservation', function () {
+    return view ('admin.sidebar.reservation');
+});
+
+Route::get('/admin-restaurant', function () {
+    return view ('admin.sidebar.restaurant');
+});
+
+Route::get('/admin-dashboard', function () {
+    return view ('admin.sidebar.dashboard');
+});
+
+////////////////////////////////////
+
 
 Route::get('/about', function () {
     return view('home.about');

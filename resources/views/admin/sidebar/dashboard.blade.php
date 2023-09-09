@@ -7,11 +7,11 @@
     
 <div class="row">
 <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card border-left-primary shadow h-100 py-2" href="admin-admin">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Admins
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Admins
                     </div>
                     {{-- <div class="row no-gutters align-items-center">
                         <div class="col-auto">
@@ -35,11 +35,11 @@
 </div>
 
 <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Users
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Users
                     </div>
                     {{-- <div class="row no-gutters align-items-center">
                         <div class="col-auto">
@@ -63,11 +63,11 @@
 </div>
 
 <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">categories
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Categories
                     </div>
                     {{-- <div class="row no-gutters align-items-center">
                         <div class="col-auto">
@@ -91,11 +91,11 @@
 </div>
 
 <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Resturants
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Resturants
                     </div>
                     {{-- <div class="row no-gutters align-items-center">
                         <div class="col-auto">
@@ -119,11 +119,11 @@
 </div>
 
 <div class="col-xl-3 col-md-6 mb-4">
-    <div class="card border-left-warning shadow h-100 py-2">
+    <div class="card border-left-primary shadow h-100 py-2">
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Reservations
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Reservations
                     </div>
                     {{-- <div class="row no-gutters align-items-center">
                         <div class="col-auto">

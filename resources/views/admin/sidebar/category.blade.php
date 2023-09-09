@@ -9,7 +9,7 @@
 <div class="container card shadow mb-4">
     <div class="row card-header">
         <div class="col"><h6 class="m-0 font-weight-bold text-primary">categories</h6></div>
-        <div class="col-2 .col-sm-6"><a href="#" class="btn btn-primary btn-icon-split">
+        <div class="col-2 .col-sm-6"><a href="admin-add-category" class="btn btn-primary btn-icon-split">
             <span class="icon text-white-50">
                 <i class="fas fa-flag"></i>
             </span>
@@ -24,7 +24,6 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Img</th>
-                        <th>Age</th>
                         <th>Created at</th>
                         <th>Updated at</th>
                         <th></th>
@@ -35,7 +34,6 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Img</th>
-                        <th>Age</th>
                         <th>Created at</th>
                         <th>Updated at</th>
                         <th></th>
@@ -48,9 +46,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                         <td>
-                            <a href="#" class="btn btn-warning btn-icon-split">
+                            <a href="admin-edit-category" class="btn btn-warning btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>

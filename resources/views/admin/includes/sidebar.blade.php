@@ -111,12 +111,12 @@
             <span>Users</span></a>
     </li>
 
-            <!-- Nav Item - Tables -->
-    <li class="nav-item">
+    <!-- Nav Item - Tables -->
+    {{-- <li class="nav-item">
         <a class="nav-link" href="admin-category">
             <i class="fas fa-fw fa-table"></i>
             <span>Categories</span></a>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">

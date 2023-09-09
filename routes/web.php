@@ -19,31 +19,31 @@ Route::get('/main', function () {
     return view('home.main');
 });
 
-Route::get('/admin-dashboard', function () {
+Route::get('/admin-layout', function () {
     return view ('admin.layout');
 });
 
-Route::get('/admin', function () {
+Route::get('/admin-admin', function () {
     return view ('admin.sidebar.admin');
 });
 
-Route::get('/user', function () {
+Route::get('/admin-user', function () {
     return view ('admin.sidebar.user');
 });
 
-Route::get('/category', function () {
+Route::get('/admin-category', function () {
     return view ('admin.sidebar.category');
 });
 
-Route::get('/reservation', function () {
+Route::get('/admin-reservation', function () {
     return view ('admin.sidebar.reservation');
 });
 
-Route::get('/restaurant', function () {
+Route::get('/admin-restaurant', function () {
     return view ('admin.sidebar.restaurant');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/admin-dashboard', function () {
     return view ('admin.sidebar.dashboard');
 });
 
@@ -73,7 +73,7 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::post('/store', 'store')->name('store');
     Route::get('/login', 'login')->name('login');
     Route::post('/authenticate', 'authenticate')->name('authenticate');
-    // Route::get('/dashboard', 'dashboard')->name('dashboard');
+    Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout');
 });
 

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('phone');
             $table->datetime('res_date')->default(now());
             $table->Integer('guest_number');
-            $table->time('time');
+            $table->string('restaurant');
             $table->string('message');
             $table->timestamps();
         });

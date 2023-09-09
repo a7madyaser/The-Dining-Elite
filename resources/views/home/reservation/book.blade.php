@@ -37,13 +37,22 @@
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+                <input name="date" class="form-control" id="date" placeholder="Date" type="datetime-local" min="2023-09-01T00:00" max="9999-12-31T23:59">
+                <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
+                <select class="form-control" name="restaurant" id="restaurant">
+                    <option value=""> Restaurant</option>
+                    @foreach($restaurants as $restaurant)
+                     <option> {{ $restaurant->name }}</option>
+    <!-- إضافة المزيد من المعلومات عن المطعم حسب الحاجة -->
+@endforeach
+
+
+                </select>
+                <div class="validate"></div>
             </div>
+
             <div class="col-lg-4 col-md-6 form-group mt-3">
               <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
               <div class="validate"></div>
@@ -88,6 +97,39 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dateInput = document.getElementById("date");
+
+        // يتم تنفيذ هذه الوظيفة عندما يتم فقد الفوكس عن حقل النص
+        dateInput.addEventListener("blur", function() {
+            // الحصول على قيمة التاريخ من الحقل النصي
+            const dateValue = dateInput.value;
+
+            // إذا كان التاريخ غير فارغ
+            if (dateValue.trim() !== "") {
+                // تحويل التاريخ إلى كائن تاريخ Date
+                const inputDate = new Date(dateValue);
+
+                // تاريخ اليوم
+                const today = new Date();
+
+                // قارن بين التاريخ المدخل وتاريخ اليوم
+                if (inputDate < today+1) {
+                    // إذا كان التاريخ أقدم من اليوم، عرض رسالة خطأ
+                    alert("لا يمكنك اختيار تاريخ قديم.");
+                    // قم بمسح محتوى الحقل النصي
+                    dateInput.value = "";
+                }
+            }
+        });
+    });
+    </script>
+
+
+
+
+
 
 </body>
 

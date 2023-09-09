@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>main page</title>
+    <title>Restaurantly Bootstrap Template - Index</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <!-- Favicons -->
@@ -43,13 +44,17 @@
                     <li><a class="nav-link scrollto active" href="/main">Home</a></li>
                     <li><a class="nav-link scrollto" href="/about">About</a></li>
                     <li class="dropdown"><a href="#"><span>Restaurant</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
+                            <ul>
 
-                        </ul>
-                    </li>
+                                @foreach($resturants as $resturant)
+                                    <li> <a href="{{url('resdetail',$resturant->id)}}">{{ $resturant->name }}</a></li>
+                                @endforeach
+                                <li><a href="/resturants">more restaurant</a></li>
+                            </ul>
+
                     <li><a class="nav-link scrollto" href="#contact">Contact us</a></li>
                 </ul>
-            </nav><!-- .navbar -->
+            <!-- .navbar -->
 
             <!-- أضف أيقونة المستخدم مع القائمة المنسدلة -->
             <div class="dropdown">
@@ -84,7 +89,7 @@
                     @endguest
                 </ul>
             </div>
-
+</nav>
             <a href="/book" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
 
         </div>
@@ -92,9 +97,6 @@
 
     @yield('contentnav')
 
-    <!-- متابعة بقية المحتوى هنا -->
-
-    <!-- أضف أيضًا الأوامر الأخرى لتضمين المكتبات والجافا سكريبت وما إلى ذلك -->
 
 </body>
 

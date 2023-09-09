@@ -3,6 +3,7 @@ use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminRoutingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,9 @@ Route::get('/main', function () {
 });
 
 //  Admin Panel /////
+
+// Route::resource("/admin-layout", AdminRoutingController::class);
+
 Route::get('/admin-layout', function () {
     return view ('admin.layout');
 });
@@ -71,6 +75,28 @@ Route::get('/admin-edit-restaurant', function () {
 });
 
 ////////////////////////////////////
+
+Route::get('/admin-add-admin', function () {
+    return view ('admin.add.admin');
+});
+
+Route::get('/admin-add-user', function () {
+    return view ('admin.add.user');
+});
+
+Route::get('/admin-add-category', function () {
+    return view ('admin.add.category');
+});
+
+Route::get('/admin-add-reservation', function () {
+    return view ('admin.add.reservation');
+});
+
+Route::get('/admin-add-restaurant', function () {
+    return view ('admin.add.restaurant');
+});
+
+/////////////////////////////////
 
 
 Route::get('/about', function () {

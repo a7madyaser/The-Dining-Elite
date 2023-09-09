@@ -56,7 +56,7 @@
                         <td></td>
                         <td></td>
                         <td>
-                            <a href="#" class="btn btn-warning btn-icon-split">
+                            <a href="admin-edit-restaurant" class="btn btn-warning btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>

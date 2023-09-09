@@ -24,7 +24,6 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Img</th>
-                        <th>Age</th>
                         <th>Created at</th>
                         <th>Updated at</th>
                         <th></th>
@@ -35,7 +34,6 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Img</th>
-                        <th>Age</th>
                         <th>Created at</th>
                         <th>Updated at</th>
                         <th></th>
@@ -48,9 +46,8 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
                         <td>
-                            <a href="#" class="btn btn-warning btn-icon-split">
+                            <a href="admin-edit-category" class="btn btn-warning btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>

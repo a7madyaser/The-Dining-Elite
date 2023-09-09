@@ -19,6 +19,7 @@ Route::get('/main', function () {
     return view('home.main');
 });
 
+//  Admin Panel /////
 Route::get('/admin-layout', function () {
     return view ('admin.layout');
 });
@@ -45,6 +46,28 @@ Route::get('/admin-restaurant', function () {
 
 Route::get('/admin-dashboard', function () {
     return view ('admin.sidebar.dashboard');
+});
+
+////////////////////////////////////
+
+Route::get('/admin-edit-admin', function () {
+    return view ('admin.edit.admin');
+});
+
+Route::get('/admin-edit-user', function () {
+    return view ('admin.edit.user');
+});
+
+Route::get('/admin-edit-category', function () {
+    return view ('admin.edit.category');
+});
+
+Route::get('/admin-edit-reservation', function () {
+    return view ('admin.edit.reservation');
+});
+
+Route::get('/admin-edit-restaurant', function () {
+    return view ('admin.edit.restaurant');
 });
 
 ////////////////////////////////////

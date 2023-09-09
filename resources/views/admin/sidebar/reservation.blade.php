@@ -21,6 +21,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>Email</th>
                         <th>Phone</th>
                         <th>Reservation date</th>
                         <th>User ID</th>
@@ -34,6 +35,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>Email</th>
                         <th>Phone</th>
                         <th>Reservation date</th>
                         <th>User ID</th>
@@ -53,8 +55,9 @@
                         <td></td>
                         <td></td>
                         <td></td>
+                        <td></td>
                         <td>
-                            <a href="#" class="btn btn-warning btn-icon-split">
+                            <a href="admin-edit-reservation" class="btn btn-warning btn-icon-split">
                                 <span class="icon text-white-50">
                                     <i class="fas fa-exclamation-triangle"></i>
                                 </span>

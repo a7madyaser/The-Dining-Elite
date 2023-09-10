@@ -2,6 +2,7 @@
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Auth\LoginRegisterController;
+use App\Http\Controllers\profileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -82,3 +83,13 @@ Route::resource("/reservation", ReservationController::class);
 
 
 
+// Route::get('/profile', function () {
+//     return view('user.user-profile');
+// });
+
+// Route::resource("/user", profileController::class);
+Route::get('/', function () {
+    return view('user.index');
+});
+
+Route::resource("/user", profileController::class);

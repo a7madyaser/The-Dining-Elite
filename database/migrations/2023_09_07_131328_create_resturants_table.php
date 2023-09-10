@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('image');
+            $table->string('location');
             $table->Integer('number_of_tables');
             $table->Integer('categories_id');
             $table->timestamps();

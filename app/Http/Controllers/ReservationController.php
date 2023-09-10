@@ -46,11 +46,11 @@ class ReservationController extends Controller
                 "phone" => $request->phone,
                 "res_date"=>$request->date,
                "guest_number"=>$request->people,
-               "time"=>$request->time,
+               "restaurant"=>$request->restaurant,
                "message"=>$request->message
 
             ]);
-            return redirect('reservation')->with('flash_message', ' Addedd!');
+            return redirect('main')->with('flash_message', ' Addedd!');
         }
 
 

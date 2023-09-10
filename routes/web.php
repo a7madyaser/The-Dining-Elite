@@ -2,7 +2,6 @@
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Auth\LoginRegisterController;
-use App\Http\Controllers\ResturantController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminRoutingController;
 use App\Http\Controllers\AdminController;
@@ -136,13 +135,6 @@ Route::controller(LoginRegisterController::class)->group(function() {
 
 
 Route::resource("/reservation", ReservationController::class);
-Route::resource("/categories", CategoryController::class);
 
 
 
-Route::controller(ResturantController::class)->group(function() {
-Route::get('/book','showSecondPage')->name('showSecondPage');
-Route::get('/resturants','Page' )->name('Page');
-});
-
-Route::get("/resdetail/{id}",[ResturantController::class,'Pagedetail']);
